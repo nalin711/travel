@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h1 {
+    font-style: italic;
+    margin-left: 5px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+#searchBar {
+    justify-content: right;
+    box-sizing: content-box;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+}
+
+#searchBar button {
+    border-radius: 50px;
+    background-color: green;
+    color: white; 
+    border: none;  
+}
+
+#search {
+    width:max-content;
+    background: url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat right 10px center;
+    background-size: 20px;
+}
+.home_page img {
+    width: 100%;
+    height: auto;
+}
+.home_page h2{
+    /* textflow in next lines*/
+    white-space: pre-line; 
+}
+.home_page::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(139, 142, 140, 0.043), rgba(29, 198, 232, 0.649)); 
+}
+.overlay_text {
+    position:absolute;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+    top: 20%;
+    left: 10%;
+}
