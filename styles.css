@@ -24,6 +24,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
+    font-family: Helvetica;
     margin-right: 10px;
 }
 nav a {
@@ -33,16 +34,18 @@ nav a {
 #searchBar {
     justify-content: right;
     box-sizing: content-box;
+    margin-right: 20px;
     background-color: white;
     color: black;
     border-radius: 50px;
 }
 
 #searchBar button {
+    margin-right: 5px;
     border-radius: 50px;
     background-color: green;
     color: white; 
-    border: none;  
+    border: none;
 }
 
 #search {
@@ -72,21 +75,20 @@ nav a {
     display:inline-block;
     width: 50%;
     font-family: Verdana;
-    font-weight: bold;
-    font-size: xx-large;
+    font-size: large;
     color: white;
     top: 20%;
     left: 10%;
 }
-.overlay_text div{
+#contact_form {
     /* form on right side  */
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: medium;
     font-weight: lighter;
 }
   
-  label {
+label {
     display: inline-block;
     width: 100px;
     margin-top: 20px;
