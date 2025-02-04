@@ -2,7 +2,7 @@
 const search_text = document.getElementById('search')
 const searchBtn = document.getElementById('searchBtn')
 const clearBtn = document.getElementById('clearBtn')
-const result = document.querySelector('.overlay_text')
+const result_display = document.querySelector('.overlay_text')
 
 /* 
 Fetch data from the travel_recommendation_api.json file using the fetch API method, 
@@ -16,12 +16,21 @@ function searchLocation() {
     fetch('http://localhost:8000/travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-        /* do operations on data */
-        console.log(Object.keys(data));
-        const result = data[`${search}`];
-        for (let i of result) {
-            console.log(Object.keys(i));
-        }
+            /* do operations on data */
+            console.log(Object.keys(data));
+            
+            const result = data[`${search}`];
+
+            for (let i of result) {
+                console.log(Object.keys(i));
+                let newdiv = document.createElement('div');
+                newdiv.innerHTML = '';
+                // inser image
+                // insert name
+                // insert description
+                newdiv.innerHTML += `<p>${Object.values(i)}</p>`;
+                result_display.appendChild(newdiv);
+            }
         })
         .catch(error => {
             console.error('Error',error);
