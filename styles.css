@@ -63,8 +63,10 @@ nav a {
 }
 
 .overlay_text {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    padding: 20px;
     position:absolute;
-    display:flex;
+    display:inline-block;
     width: 50%;
     font-family: Verdana;
     font-size: large;
@@ -80,6 +82,16 @@ nav a {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 10px;
+}
+
+.overlay_text #team button{
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #contact_form {
@@ -102,3 +114,12 @@ label {
     width: 200px;
     padding: 5px;
   }
+.home_page::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(139, 142, 140, 0.043), rgba(29, 198, 232, 0.649)); 
+}
