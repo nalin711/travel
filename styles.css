@@ -61,15 +61,7 @@ nav a {
     /* textflow in next lines*/
     white-space: pre-line; 
 }
-.home_page::after {
-    content: "";
-    position: absolute;
-    top: auto;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to left, rgba(139, 142, 140, 0.043), rgba(29, 198, 232, 0.649)); 
-}
+
 .overlay_text {
     position:absolute;
     display:flex;
@@ -80,10 +72,16 @@ nav a {
     top: 20%;
     left: 10%;
 }
-.overlay_text h2 {
-    font-size: 50px;
-    font-weight: bold;
+.overlay_text #team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
 }
+
 #contact_form {
     /* form on right side  */
     margin-bottom: 20px;
@@ -104,10 +102,3 @@ label {
     width: 200px;
     padding: 5px;
   }
-
-#team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
