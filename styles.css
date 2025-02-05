@@ -72,13 +72,17 @@ nav a {
 }
 .overlay_text {
     position:absolute;
-    display:inline-block;
+    display:flex;
     width: 50%;
     font-family: Verdana;
     font-size: large;
     color: white;
     top: 20%;
     left: 10%;
+}
+.overlay_text h2 {
+    font-size: 50px;
+    font-weight: bold;
 }
 #contact_form {
     /* form on right side  */
@@ -100,3 +104,10 @@ label {
     width: 200px;
     padding: 5px;
   }
+
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
